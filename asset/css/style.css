@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+main {
+  border: 2px solid;
+  width: 51rem;
+  height: 27rem;
+  background-color: rgb(238, 229, 229);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h5 {
+  margin-left: 1rem;
+}
+
+.ingresar {
+  display: flex;
+}
+
+.valores {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rem;
+  margin-left: 1rem;
+}
+
+th {
+  padding: 1rem;
+}
+
+p {
+  margin-right: 2rem;
+}
+section {
+  display: flex;
+  padding: 1rem;
+}
+
+input {
+  width: 80%;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+button {
+  background-color: green;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+table,
+th,
+td {
+  text-align: center;
+}
+
+.btnpintado:hover {
+  cursor: pointer;
+  color: red;
+}
+.inptpintado:hover {
+  cursor: pointer;
+}
