@@ -20,8 +20,8 @@ const nuevaTarea = () => {
   }
   const ultimaActividad = realizar[realizar.length - 1];
   const nuevaActividad = {
-    id: ultimaActividad ? ultimaActividad.id + 1 : 1, // se incrementa el ID , se usa operador ternario
-    tarea: agregarTarea,
+    id: ultimaActividad ? ultimaActividad.id + 1 : 1, // se incrementa el ID , se usa operador ternario(si tienes id,damelo y le incrementas 1 sino comienzas en 1)
+    tarea: agregarTarea,//la que ingrese el usuario
     completed: false,
   };
   realizar.push(nuevaActividad);
@@ -47,18 +47,19 @@ function printareas() {
   }
 
   cantRealizada = realizar.filter((tarea) => tarea.completed === true).length;
- // console.log("cantidad", cantRealizada);
+  //console.log("cantidad", cantRealizada);
   mi_lista.innerHTML = html;
   actividad.value = "";
   total.innerHTML = realizar.length; // aqui se muestra o renderiza el total de las tareas
   realizada.innerHTML = cantRealizada;//cantidad de tareas realizadas
+  //console.log(cantRealizada)
 }
 
 
 
 const cambiarEstado = (id) => {
   const tarea = realizar.find((tarea) => tarea.id === id);//El método find() devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.
- // console.log("encontrado", tarea);
+  //console.log("encontrado", tarea);
 
   tarea.completed = !tarea.completed;//si se consigue el primer objeto en false ,pasalo a true y viceversa
 
